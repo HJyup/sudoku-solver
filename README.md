@@ -53,14 +53,6 @@ cabal run sudoku-solver
 
 ```
 
-Start the server
-
-```bash
-
-npm run start
-
-```
-
 
 ## License
 
