@@ -1,6 +1,6 @@
 module Module.DPLL where
 
-import Types.SudokuTypes ( Form(..), Clause(Or), Literal(P), neg )
+import Types.SudokuTypes ( Form(..), Clause(Or), Literal, neg )
 
 import Data.List (sortOn, delete)
 
@@ -12,7 +12,7 @@ dpll :: Eq atom => Form atom -> [[Literal atom]]
 dpll f =
     case prioritise f of
       [] -> [[]] -- the trivial solution
-      Or [] : cs -> [] -- no solution
+      Or [] : _ -> [] -- no solution
       Or (l:ls) : cs ->
           [ l : ls | ls <- dpll (And (cs << l)) ]
           ++

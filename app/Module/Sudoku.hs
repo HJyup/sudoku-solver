@@ -1,4 +1,3 @@
-
 module Module.Sudoku where
 
 import Types.SudokuTypes (Form(..), Clause(Or), Literal(P, N), (<&&>))

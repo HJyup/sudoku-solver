@@ -5,6 +5,7 @@ import Module.PrintSudoku (printAllSolutions)
 import Module.Sudoku (sudoku)
 import Types.SudokuTypes (Form(And), Clause(Or), Literal(P), (<&&>))
 
+
 sudokuProblem :: Form (Int, Int, Int)
 sudokuProblem = And [ Or [P (1,8,8)], Or [P (1,9,2)], Or [P (2,1,6)]
                     , Or [P (2,4,4)], Or [P (4,1,4)], Or [P (4,5,7)]
