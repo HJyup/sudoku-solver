@@ -5,7 +5,9 @@ This is a Haskell-based application that solves Sudoku puzzles using the **DPLL 
 
 The basic backtracking algorithm runs by choosing a literal, assigning a truth value to it, simplifying the formula and then recursively checking if the simplified formula is satisfiable; if this is the case, the original formula is satisfiable; otherwise, the same recursive check is done assuming the opposite truth value
 
-![DPLL](https://upload.wikimedia.org/wikipedia/commons/d/dc/Dpll11.png)
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Dpll11.png" alt="DPLL"/>
+</p>
 
 In practice, DPLL is often very efficient. But it’s very slow in some cases, taking time that is exponential in the size of its input, which is the same as checking satisfiability using truth tables. No algorithm for satisfiability is known that doesn’t share this property
 ## Example of Predefined Puzzle
